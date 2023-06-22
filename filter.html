@@ -1,0 +1,41 @@
+<?php
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "userdetails";
+
+$conn = new mysqli($servername, $username, $password, $dbname);
+
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+
+$sql = "SELECT * FROM books";
+$result = $conn->query($sql);
+
+if ($result->num_rows > 0) {
+    $books = array();
+
+    while ($row = $result->fetch_assoc()) {
+        $book = array(
+            'bookId' => $row['bookid'],
+            'title' => $row['title'],
+            'author' => $row['author'],
+            'subject' => $row['subject'],
+            'dateOfPublication' => $row['date_of_publication'],
+            'image' => $row['image'],
+            'noOfCopies' => $row['no_of_copies']
+        );
+
+        $books[] = $book;
+    }
+
+    // Convert the array to JSON
+    $json = json_encode($books, JSON_PRETTY_PRINT);
+} else {
+    $json = "[]"; // Empty JSON array
+}
+
+$conn->close();
+?>
+

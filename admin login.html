@@ -1,0 +1,44 @@
+<html>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function adminlogin()
+        {
+            var uname=document.getElementById("uname").value;
+            var pass=document.getElementById("pass").value;
+            if(uname=="admin" && pass=="123")
+            {
+                window.open('admin.html');
+            }
+            else{
+                alert("Incorrect credentials provided");
+            }
+        }
+    </script>
+    
+<body>
+   
+	<header>
+		<p>Enriching Minds, Empowering Readers</p>
+     <h1>LibraSys - Ultimate Library Management System </h1></p>
+		<p>Empowering the World of Books</p>
+	</header>
+        <div class="heading">
+            <img src="login.jpg" height="300" width="300"></img>
+            <div class="box">
+            <h2>LIBRARY MANAGEMENT SYSTEM ADMIN LOGIN</h2>
+            <form >
+                Enter Administrator Username:
+                <input type="text" id="uname" name="username" required><br><br>
+                Enter Administrator Password:
+                <input type="password" id="pass" name="password" required><br><br>
+                <button onclick="adminlogin()">LOG IN</button>
+            </form>
+            
+            </div>
+            </div>
+        </div>
+    
+    
+</body>
+</html>
+

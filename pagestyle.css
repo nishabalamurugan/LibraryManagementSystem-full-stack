@@ -1,0 +1,35 @@
+*
+{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h2{
+    text-align:center;
+    font-size: 40px;
+    font-weight: bolder;
+    font-style: italic;
+}
+section{
+    min-height: 100vh;
+    display: flex;  
+    align-items: center;
+    justify-content: center;
+
+  
+}
+section .main{
+    margin:100px;
+    display: flex;
+}
+.main
+{
+    position: relative;
+    transform:translateY(150px);
+    opacity: 0;
+
+}
+.main.active
+{
+    transform: translateY(0px);
+    opacity: 1;
+}

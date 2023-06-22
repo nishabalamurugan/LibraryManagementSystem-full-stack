@@ -1,0 +1,68 @@
+<html>
+    <link rel="stylesheet" href="style.css">
+<body>
+   <script>
+    function reg()
+    {
+       var pass=document.getElementById("password").value;
+       var cpass=document.getElementById("confirmPassword").value;
+       console.log(pass);
+       console.log(cpass);
+       if(pass!=cpass)
+       {
+        alert("Entered passwords on the set password and confirm  password fields should match");
+       }
+       return 0;
+    }
+   </script>  `
+	<header>
+		<p>Enriching Minds, Empowering Readers</p>
+     <h1>LibraSys - Ultimate Library Management System </h1></p>
+		<p>Empowering the World of Books</p>
+	</header>
+    <div >
+        <h3>NEW USER REGISTRATION </h3>
+        <form action="insert.php" method="post" style="text-align:center">
+            <label for="username">Enter Username:&nbsp;&nbsp;</label>
+            <input type="text" id="username" name="username" required><br><br>
+        
+            <label for="age" >Enter your Age:&nbsp;&nbsp;</label>
+            <input type="number" id="age" name="age" required><br><br>
+
+            
+            <label for="age" style="margin-right:10px;">Enter  email Id:&nbsp;&nbsp;</label>
+            <input type="email" id="email" name="email"><br><br>
+        
+            <label for="dob">Select Your Date of Birth:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+            <input type="date" id="dob" name="dob" required><br><br>
+        
+            <label for="qualification">Select Your Qualification:&nbsp;</label>
+            <select id="qualification" name="qualification" required>
+              <option value="">Select Qualification</option>
+              <option value="high_school">High School</option>
+              <option value="bachelor">Bachelor's Degree</option>
+              <option value="master">Master's Degree</option>
+            </select><br><br>
+
+            
+            <label for="password">Set Your Password:</label>
+            <input type="password" id="password" name="password" required><br><br>
+            
+            <label for="confirmPassword">Confirm Password:</label>
+            <input type="password" id="confirmPassword" name="confirmPassword" required><br><br>
+            <p style="font-size: 12px;">*Password should contain minimum 8 characters, one uppercase letter, one lowercase letter, and one digit</p>
+            <label for="address">Enter your Residential address:</label><br>
+            <textarea id="address" name="address" required ></textarea><br><br>
+            <button type="submit" >Register</button>
+    </div>
+    
+  <header>
+    <h1>For other queries,Contact</h1>
+    
+    <p>Nisha B - 9876545567</p>
+    <p>Nithish kumar B - 9876546567</p>
+    
+</header>
+
+</body>
+</html>   

@@ -1,0 +1,99 @@
+<html>
+   
+    <style>
+        .myform
+        {
+            margin-left:750px;
+            padding:10px;
+            font-size:25px;
+        }
+        header {
+    background-color: #333;
+    color: #fff;
+    padding: 5px;
+    text-align: center;
+   
+    
+}
+
+body{
+ 
+  background-color:rgb(225, 225, 208);
+}
+button{
+   
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 2px;
+    
+  }
+
+  .hover-button {
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+      
+      .hover-button:hover {
+        background-color: #45a049;
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+      }
+
+    </style>
+<body>
+   
+	<header>
+		<p>Enriching Minds, Empowering Readers</p>
+     <h1>LibraSys - Ultimate Library Management System </h1></p>
+		<p>Empowering the World of Books</p>
+	</header>
+    <div class="myform">
+        <h3>ADD NEW BOOKS</h3>
+        <form action="insertbook.php" method="post" enctype="multipart/form-data">
+            <label for="username">Enter Book id:</label>
+            <input type="number" id="id" name="id" required><br><br>
+        
+            <label for="age">Enter book title:</label>
+            <input type="text" id="title" name="title" required><br><br>
+        
+            <label for="text">Enter book author:</label>
+            <input type="text" id="author" name="author" required></input><br><br>
+    
+            
+            <label for="text">Enter Subject:</label>
+            <input type="text "id="subject" name="subject" required></input><br><br>
+        
+            <label for="dob">Enter Date of publication</label>
+            <input type="date" id="dop" name="dop" required><br><br>
+        
+
+            <label>Add book image</label>
+            <input type="file" name="my_image" required><br><br>
+            <label >Enter no.of.copies:</label>
+            <input type="number" id="copies" name="copies" ><br><br>
+        
+        
+           <input type="submit" value="upload" name="submit">
+    </div>
+    
+  <header>
+    <h1>For other queries,Contact</h1>
+    
+    <p>Nisha B - 9876545567</p>
+    <p>Nithish kumar B - 9876546567</p>
+    
+</header>
+
+</body>
+</html>    

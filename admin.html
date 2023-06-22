@@ -1,0 +1,86 @@
+
+<html>
+<body> 
+
+    <link rel="stylesheet" href="style.css">
+    <style>
+    .hover-button {
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+      
+      .hover-button:hover {
+        background-color: #45a049;
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+      }</style>
+   <script>
+    function add()
+    {
+        window.open("registerbook.html");
+    }
+    function addmem()
+    {
+        window.open("new user.html");
+    }
+    function del()
+    {
+        window.open("deletebook.html");
+    }
+    function update()
+    {
+        window.open("updatebook.html");
+    }
+    function returnbook()
+    {
+        window.open("returnbook.html");
+    }
+   </script>
+	<header>
+		<p>Enriching Minds, Empowering Readers</p>
+     <h1>LibraSys - Ultimate Library Management System </h1></p>
+		<p>Empowering the World of Books</p>
+	</header>
+    <title>admin </title><br><br>
+    
+    
+    <form >
+        <button class="hover-button" onclick="add()">ADD NEW BOOKS </button>
+    </form>
+    <form  action="viewbook.php">
+        <button class="hover-button" >&nbsp;&nbsp;&nbsp;VIEW BOOKS&nbsp;&nbsp;&nbsp;</button>
+    </form>
+
+    <form>
+        <button class="hover-button"  onclick="del()">&nbsp;&nbsp;DELETE BOOK&nbsp;</button>
+    </form>
+
+    
+
+    <form >
+        <button class="hover-button"  onclick="update()">&nbsp;UPDATE BOOK&nbsp; </button>
+    </form>
+    <form action="select.php" method="post">
+        <button class="hover-button"  >VIEW MEMBERS</button>
+    </form>
+
+    <form >
+        <button class="hover-button"  onclick="addmem()">&nbsp;ADD MEMBERS</button>
+    </form>
+
+    <form >
+        <button class="hover-button"  onclick="returnbook()">UPDATE RETURN </button>
+    </form>
+    
+</div>
+    <header>
+        <h1>For other queries,Contact</h1>
+        
+        <p>Nisha B - 9876545567</p>
+        <p>Nithish kumar B - 9876546567</p>
+        
+    </header><br><br><br></body></html>
+</html>
